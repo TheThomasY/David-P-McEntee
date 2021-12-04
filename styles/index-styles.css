@@ -81,7 +81,7 @@ section p {
   color: #8c8c8c;
 }
 
-.intro {
+.intro-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -91,11 +91,15 @@ section p {
           flex-direction: column;
 }
 
-.intro .intro-figure {
+.intro-section .intro-figure {
   margin: 5rem auto;
 }
 
-.intro .intro-figcaption {
+.intro-section .intro-figure .intro-img-desktop {
+  display: none;
+}
+
+.intro-section .intro-figcaption {
   margin-top: 1rem;
   color: #8c8c8c;
 }
@@ -112,12 +116,27 @@ section p {
   text-transform: uppercase;
 }
 
+.insta-section-bg {
+  background: url(../assets/images/index/instagram-bg-img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.insta-feed {
+  margin-top: 0;
+  padding: 5rem 0;
+}
+
 .insta-grid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   grid-gap: 1.5rem 1.5rem;
+}
+
+.insta-img {
+  cursor: pointer;
 }
 
 .insta-img img {
@@ -217,5 +236,85 @@ section p {
   margin: 0 1rem;
   -webkit-filter: invert(48%) sepia(100%) saturate(293%) hue-rotate(152deg) brightness(83%) contrast(100%);
           filter: invert(48%) sepia(100%) saturate(293%) hue-rotate(152deg) brightness(83%) contrast(100%);
+}
+
+@media (min-width: 48em) {
+  .hero {
+    background-position: left;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .hero-text {
+    max-width: 60rem;
+    margin-top: 25rem;
+    margin-right: 25rem;
+    padding: 4.5rem;
+    font-size: clamp(4rem, 1.168rem + 4.05vw, 7rem);
+  }
+  section {
+    text-align: left;
+  }
+  section h2 {
+    font-size: 4rem;
+  }
+  .intro-section {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .intro-section .intro-text {
+    width: 100%;
+  }
+  .intro-section .intro-figure {
+    width: 100%;
+    margin: 2rem;
+  }
+  .intro-section .intro-figure .intro-img-mobile {
+    display: none;
+  }
+  .intro-section .intro-figure .intro-img-desktop {
+    display: block;
+    width: 100%;
+  }
+  .insta-page-break {
+    margin-top: 7.5rem;
+  }
+  .insta-feed {
+    padding: 10rem 0;
+  }
+  .insta-grid {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .insta-img img {
+    width: 100%;
+    height: 39rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .contact-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (max-width: 61.3125em) {
+  .hero {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .hero-text {
+    margin-right: 0;
+  }
 }
 /*# sourceMappingURL=index-styles.css.map */

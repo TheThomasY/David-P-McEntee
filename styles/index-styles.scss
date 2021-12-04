@@ -86,12 +86,16 @@ section {
 }
 
 // Intro
-.intro {
+.intro-section {
   display: flex;
   flex-direction: column;
 
   .intro-figure {
     margin: 5rem auto;
+
+    .intro-img-desktop {
+      display: none;
+    }
   }
 
   .intro-figcaption {
@@ -113,6 +117,17 @@ section {
   text-transform: uppercase;
 }
 
+.insta-section-bg {
+  background: url(../assets/images/index/instagram-bg-img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.insta-feed {
+  margin-top: 0;
+  padding: 5rem 0;
+}
+
 .insta-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -120,6 +135,7 @@ section {
 }
 
 .insta-img {
+  cursor: pointer;
   img {
     width: 100%;
     height: 22rem;
@@ -206,5 +222,92 @@ section {
       filter: invert(48%) sepia(100%) saturate(293%) hue-rotate(152deg)
         brightness(83%) contrast(100%);
     }
+  }
+}
+
+// Media Queries
+@media (min-width: 48em) {
+  // Hero Image
+  .hero {
+    background-position: left;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+
+  .hero-text {
+    max-width: 60rem;
+    margin-top: 25rem;
+    margin-right: 25rem;
+    padding: 4.5rem;
+    font-size: unquote('clamp(4rem, 1.168rem + 4.05vw, 7rem)');
+  }
+
+  section {
+    text-align: left;
+
+    h2 {
+      font-size: 4rem;
+    }
+  }
+
+  .intro-section {
+    flex-direction: row;
+    align-items: center;
+
+    .intro-text {
+      width: 100%;
+    }
+
+    .intro-figure {
+      width: 100%;
+      margin: 2rem;
+
+      .intro-img-mobile {
+        display: none;
+      }
+
+      .intro-img-desktop {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+
+  .insta-page-break {
+    margin-top: 7.5rem;
+  }
+
+  .insta-feed {
+    padding: 10rem 0;
+  }
+
+  .insta-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .insta-img {
+    img {
+      width: 100%;
+      height: 39rem;
+      object-fit: cover;
+    }
+  }
+
+  // Contact
+  .contact-section {
+    display: flex;
+  }
+}
+
+@media (max-width: 61.3125em) {
+  // 981px
+  // Only here to ensure hero text margin is balanced at all screen sizes
+
+  .hero {
+    justify-content: center;
+  }
+
+  .hero-text {
+    margin-right: 0;
   }
 }
