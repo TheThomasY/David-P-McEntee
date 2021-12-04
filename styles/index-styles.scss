@@ -67,21 +67,12 @@ section {
   text-align: center;
 
   h2 {
+    margin-top: 2.5rem;
+    padding: 0 2.5rem;
     font-family: 'Josefin Sans', sans-serif;
     text-transform: uppercase;
     font-size: 3rem;
     font-weight: 300;
-  }
-}
-
-// Intro
-.intro {
-  display: flex;
-  flex-direction: column;
-
-  h2 {
-    margin-top: 2.5rem;
-    padding: 0 2.5rem;
   }
 
   p {
@@ -90,6 +81,12 @@ section {
     line-height: 2.5rem;
     color: $dk-gray;
   }
+}
+
+// Intro
+.intro {
+  display: flex;
+  flex-direction: column;
 
   .intro-figure {
     margin-top: 5rem;
@@ -125,5 +122,61 @@ section {
     width: 100%;
     height: 22rem;
     object-fit: cover;
+  }
+}
+
+// Contact
+.contact-section {
+  margin-top: 10rem;
+
+  h2 {
+    margin-top: 5rem;
+  }
+}
+
+.contact-headshot {
+  width: 80%;
+  max-width: 30rem;
+  margin: 0 auto;
+  border-radius: 75% 75% 75% 75% / 50% 50% 50% 50%;
+}
+
+.email-form {
+  margin-top: 5rem;
+  padding: 0 2.5rem;
+  display: flex;
+  flex-direction: column;
+
+  div {
+    margin-top: 2rem;
+  }
+
+  input,
+  textarea {
+    margin-top: 1rem;
+    border: 1px solid $dk-gray;
+    padding: 1rem;
+  }
+
+  input:focus {
+    outline: none !important;
+    border-color: $dk-gray;
+    box-shadow: 0 0 10px $dk-gray;
+  }
+  textarea:focus {
+    outline: none !important;
+    border-color: $dk-gray;
+    box-shadow: 0 0 10px $dk-gray;
+  }
+
+  .submit-input {
+    display: inline-block;
+    border: none;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    background: #318db4;
+    color: #ffffff;
+    cursor: pointer;
+    text-align: center;
   }
 }
