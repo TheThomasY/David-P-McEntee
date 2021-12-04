@@ -184,20 +184,6 @@ section p {
   padding: 1rem;
 }
 
-.email-form input:focus {
-  outline: none !important;
-  border-color: #8c8c8c;
-  -webkit-box-shadow: 0 0 10px #8c8c8c;
-          box-shadow: 0 0 10px #8c8c8c;
-}
-
-.email-form textarea:focus {
-  outline: none !important;
-  border-color: #8c8c8c;
-  -webkit-box-shadow: 0 0 10px #8c8c8c;
-          box-shadow: 0 0 10px #8c8c8c;
-}
-
 .email-form .submit-input {
   display: inline-block;
   border: none;
@@ -215,6 +201,7 @@ section p {
   background-color: #070e18;
   color: #8c8c8c;
   font-size: 1.4rem;
+  text-align: center;
 }
 
 .footer-section div {
@@ -304,6 +291,42 @@ section p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .contact-section .contact-headshot {
+    width: 100%;
+    max-width: 40rem;
+    max-height: 56.3rem;
+    margin: 2.5rem 3rem 0 0;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .contact-section .contact-section-text {
+    width: 100%;
+  }
+  .contact-section .email-form {
+    margin-top: 0;
+  }
+  .footer-section {
+    margin-top: 10rem;
+    padding-bottom: 8rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: relative;
+  }
+  .footer-section div {
+    width: 100%;
+  }
+  .footer-copyright {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
 }
 
