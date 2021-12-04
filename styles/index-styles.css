@@ -1,0 +1,55 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Alata', sans-serif;
+}
+
+.hero {
+  height: 65rem;
+  background-image: url(../assets/images/header-img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -22rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero-text {
+  width: 90%;
+  position: relative;
+  top: -3rem;
+  padding: 2rem;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 4rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=index-styles.css.map */

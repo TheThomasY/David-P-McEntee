@@ -1,0 +1,51 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Alata', sans-serif;
+}
+
+// Hero image and text
+.hero {
+  height: 65rem;
+  background-image: url(../assets/images/header-img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  // People to the right:
+  // background-position: -5rem;
+  // People to the left:
+  background-position: -22rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-text {
+  width: 90%;
+  position: relative;
+  top: -3rem;
+  padding: 2rem;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 4rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
