@@ -176,17 +176,6 @@ section {
     padding: 1rem;
   }
 
-  input:focus {
-    outline: none !important;
-    border-color: $dk-gray;
-    box-shadow: 0 0 10px $dk-gray;
-  }
-  textarea:focus {
-    outline: none !important;
-    border-color: $dk-gray;
-    box-shadow: 0 0 10px $dk-gray;
-  }
-
   .submit-input {
     display: inline-block;
     border: none;
@@ -206,6 +195,7 @@ section {
   background-color: $footer-bg;
   color: $dk-gray;
   font-size: 1.4rem;
+  text-align: center;
 
   div {
     margin-top: 2rem;
@@ -273,6 +263,7 @@ section {
     }
   }
 
+  // Insta
   .insta-page-break {
     margin-top: 7.5rem;
   }
@@ -296,6 +287,45 @@ section {
   // Contact
   .contact-section {
     display: flex;
+
+    .contact-headshot {
+      width: 100%;
+      max-width: 40rem;
+      max-height: 56.3rem;
+      margin: 2.5rem 3rem 0 0;
+      align-self: center;
+    }
+
+    .contact-section-text {
+      width: 100%;
+    }
+
+    .email-form {
+      margin-top: 0;
+    }
+  }
+
+  .footer-section {
+    margin-top: 10rem;
+    padding-bottom: 8rem;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    div {
+      width: 100%;
+    }
+
+    .footer-fund {
+      // text-align: left;
+    }
+  }
+
+  .footer-copyright {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translateX(-50%);
   }
 }
 
