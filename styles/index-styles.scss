@@ -35,7 +35,7 @@ body {
 // Hero image and text
 .hero {
   height: 65rem;
-  background-image: url(../assets/images/header-img.jpg);
+  background-image: url(../assets/images/index/header-img.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   // People to the right:
@@ -98,5 +98,32 @@ section {
   .intro-figcaption {
     margin-top: 1rem;
     color: $dk-gray;
+  }
+}
+
+// Instagram
+.insta-page-break {
+  width: 100%;
+  margin-top: 5rem;
+  padding: 2rem;
+  background-color: black;
+  font-size: 3.5rem;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.insta-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1.5rem 1.5rem;
+}
+
+.insta-img {
+  img {
+    width: 100%;
+    height: 22rem;
+    object-fit: cover;
   }
 }
