@@ -1,3 +1,7 @@
+// Colours
+$dk-gray: hsl(0, 0%, 55%);
+$vdk-gray: hsl(0, 0%, 41%);
+
 *,
 *::before,
 *::after {
@@ -11,6 +15,12 @@
 
 ul {
   list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 html {
@@ -48,4 +58,45 @@ body {
   font-size: 4rem;
   font-weight: 300;
   text-transform: uppercase;
+}
+
+// All sections
+section {
+  width: 90%;
+  margin: 5rem auto 0 auto;
+  text-align: center;
+
+  h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 300;
+  }
+}
+
+// Intro
+.intro {
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    margin-top: 2.5rem;
+    padding: 0 2.5rem;
+  }
+
+  p {
+    margin-top: 2.5rem;
+    padding: 0 2.5rem;
+    line-height: 2.5rem;
+    color: $dk-gray;
+  }
+
+  .intro-figure {
+    margin-top: 5rem;
+  }
+
+  .intro-figcaption {
+    margin-top: 1rem;
+    color: $dk-gray;
+  }
 }

@@ -14,6 +14,12 @@ ul {
   list-style-type: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -51,5 +57,49 @@ body {
   font-size: 4rem;
   font-weight: 300;
   text-transform: uppercase;
+}
+
+section {
+  width: 90%;
+  margin: 5rem auto 0 auto;
+  text-align: center;
+}
+
+section h2 {
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.intro h2 {
+  margin-top: 2.5rem;
+  padding: 0 2.5rem;
+}
+
+.intro p {
+  margin-top: 2.5rem;
+  padding: 0 2.5rem;
+  line-height: 2.5rem;
+  color: #8c8c8c;
+}
+
+.intro .intro-figure {
+  margin-top: 5rem;
+}
+
+.intro .intro-figcaption {
+  margin-top: 1rem;
+  color: #8c8c8c;
 }
 /*# sourceMappingURL=index-styles.css.map */
